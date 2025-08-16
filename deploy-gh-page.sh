@@ -4,11 +4,11 @@
 set -e
 
 # Create a temporary directory for the deployment
-TEMP_DIR=$(mktemp -d)
+TEMP_DIR="dist"
 
 # Build the project with Vite into the temporary directory
 echo "Building the project with Vite into the temporary directory..."
-vite build --outDir "$TEMP_DIR"
+npm run build
 
 # Navigate to the temporary directory
 echo "$TEMP_DIR"
@@ -19,8 +19,8 @@ echo "Initializing a new Git repository..."
 git init
 
 # Add the remote origin (replace with your actual remote URL)
-REMOTE_URL=git@github.com-laurentmmeyer:laurentmmeyer/ghostscript-pdf-compress.wasm.git
-git remote add origin "$REMOTE_URL"
+REMOTE_URL=git@github.com-krmanik:krmanik/local-pdf-tools.git
+# git remote add origin "$REMOTE_URL"
 
 # Add all build files to git
 git add -A
