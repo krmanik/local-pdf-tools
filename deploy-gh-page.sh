@@ -30,7 +30,7 @@ git commit -m "Deploy build output to gh-pages"
 
 # Force push to gh-pages branch
 echo "Force pushing to gh-pages branch..."
-git push --force origin main:gh-pages
+git push --force origin master:gh-pages
 
 # Cleanup: Remove the temporary directory
 cd ..

@@ -589,7 +589,7 @@ function App() {
           {/* Left: Page Title */}
           <div className="flex items-center h-full">
             <img
-              src="/pdf-file.svg"
+              src="/local-pdf-tools/pdf-file.svg"
               alt="PDF Icon"
               className="w-8 h-8 md:w-10 md:h-10 mr-3"
               style={{ display: 'inline-block', verticalAlign: 'middle' }}
