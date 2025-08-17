@@ -9,8 +9,8 @@ export async function _GSPS2PDF(dataStruct, responseCallback, progressCallback, 
   return new Promise((resolve, reject) => {
     const timeout = setTimeout(() => {
       worker.terminate();
-      reject(new Error('Processing timeout after 60 seconds'));
-    }, 60000); // 60 second timeout
+      reject(new Error('Processing timeout after 1 hour'));
+    }, 3600000); // 1 hour timeout
     
     const listener = (e) => {
       // Handle progress updates
